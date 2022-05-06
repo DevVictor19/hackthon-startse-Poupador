@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    
   </head>
 
   <body>
@@ -41,29 +44,43 @@
         <a href="#" id="logo">PoupaDor</a>
         <img id="bars-menu-btn" src="./assets/icons/bars.png" alt="bars menu" />
         <div id="desktop-links" class="header__container-nav-itens">
-          <a href="#sobre">Sobre o projeto</a>
-          <a href="#perfil_financeiro">Perfil Financeiro</a>
+          <a href="#sobre">O projeto</a>
+          <a href="#perfil_financeiro">Perfil financeiro</a>
           <a href="#financeiro">Planejador de finanças</a>
-          <a href="#artigos">Artigos relevantes</a>
+          <a href="#artigos">Artigos relacionados</a>
           <a href="#sobrenos">Sobre nós</a>
         </div>
       </nav>
     </header>
+
     <div id="header-fix"></div>
+
+    <section id="introdução">
+      <div id="apresentação">
+        <p>Descubra como organizar <br> a sua vida financeira <br>com o PoupaDor<br></p>
+        <p id="subtitle">
+        A maneira mais rápida e prática de controlar suas finanças
+        </p>
+        <p>
+          <a href="#sobre"><button id="start" type="button">
+          Clique para começar!
+          </button></a>
+        </p>
+      </div>
+      <img src="./assets/porquinho_transparente.png" alt="porquinho" id="porquinho">
+  </section>
 
     <section id="sobre" class="section__sobre center">
       <div class="section__sobre-wrapper">
         <div class="section__sobre-content">
-          <h3 class="title-text">Sobre o projeto</h3>
+          <h3 class="title-text">SOBRE O POUPADOR</h3>
           <p class="small-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            suscipit voluptates officia, inventore assumenda rerum saepe
-            pariatur, non repellendus recusandae tempore unde architecto maxime
-            quas, debitis dolorum at mollitia sint.
+            O PoupaDor é um projeto desenvolvido para facilitar o seu planejamento financeiro. Entenda qual o seu perfil e receba dicas de como poupar dinheiro e organizar suas finanças. Vamos começar?
           </p>
         </div>
+        <div id="linha-vertical"></div>
         <div class="section__sobre-img">
-          <img src="./assets/porquinho_transparente.png" alt="porquinho" />
+          <img src="./assets/capa.png" alt="capa" />
         </div>
       </div>
     </section>
@@ -74,12 +91,14 @@
     >
       <div class="main__perfilfinanceiro-wrapper center-column">
         <div id="tela-inicial" class="main__perfilfinanceiro-description">
-          <h3 class="title-text">Teste seu perfil financeiro</h3>
+          <h3 class="title-text">TESTE O SEU PERFIL FINANCEIRO</h3>
           <p class="small-text">
             Entenda qual é o seu perfil financeiro e como agir para controlar
-            suas finanças.Faça o teste e descubra em qual grupo você se
+            suas finanças. Faça o teste e descubra em qual grupo você se
             encontra: Endividado, Equilibrado Financeiramente ou Investidor.
+            <img src="./assets/boneco_perfil-financeiro.png" alt="boneco" id="boneco">
           </p>
+          
           <button class="display-btn" id="iniciar-teste-btn" type="button">
             Iniciar Teste
           </button>
@@ -119,12 +138,11 @@
           id="planejamento-tela-principal"
           class="container__planejamentoFinanceiro-telaInicial"
         >
-          <h3 class="title-text">Planejador financeiro</h3>
+          <h3 class="title-text">PLANEJADOR FINANCEIRO</h3>
           <p class="small-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-            vel, dolorem perspiciatis, alias incidunt architecto commodi atque
-            veritatis non nemo nostrum impedit! Modi officia ratione id sunt
-            quia commodi facilis.
+            Utilize a presente ferramenta para aprender a como gastar o seu dinheiro e que parcela investir. Insira o valor do seu salário liquido abaixo e vamos planejar!
+            <br><br>
+            <img src="./assets/planejamento-financeiro.png" alt="planejador" id="planejador_foto">
           </p>
           <form class="form__planejamentoFinanceiro" action="">
             <button
@@ -211,12 +229,9 @@
     <section id="artigos" class="artigos section-padding center">
       <div class="artigos__wrapper center-column">
         <div class="conteudoTexto__artigos">
-          <h3 class="title-text">Artigos relevantes</h3>
+          <h3 class="title-text">ARTIGOS RELEVANTES</h3>
           <p class="small-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perferendis, corrupti totam! Et vel magnam cum dolorum commodi dicta
-            fugit deleniti, atque mollitia pariatur sit quaerat rerum? Explicabo
-            odio eveniet a.
+            Aqui você encontra vídeos e artigos relacionados ao mundo financeiro e economia, para que você aprenda mais e possa otimizar o seu planejamento.
           </p>
         </div>
 
@@ -253,7 +268,7 @@
 
     <section id="sobrenos" class="section__sobrenos center">
       <div class="section__sobrenos-wrapper center-column">
-        <h1>Desenvolvedores</h1>
+        <h1>DESENVOLVEDORES</h1>
         <div class="section__sobrenos-cards">
           <div class="section__sobrenos-card">
             <div class="section__sobrenos-card-content center-column">
@@ -304,13 +319,13 @@
                 src="./assets/devs/GiovannaHelena.jpg"
                 alt="dev Giovanna Helena"
               />
-              <h2>Gi Helena</h2>
-              <p>Descricao</p>
+              <h2>Giovanna Helena</h2>
+              <p>Advogada e futura programadora full-stack. Aprimorando habilidades em HTML, CSS e Javascript.</p>
             </div>
             <div class="section__sobrenos-card-buttons">
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/antonio-victor-oliveira-borges-4a2852228"
+                href="https://www.linkedin.com/in/giovanna-helena-40167a239"
                 ><img src="./assets/icons/linkedin-ico.png" alt="linkedin icon"
               /></a>
               <a target="_blank" href="https://github.com/giohelena"
